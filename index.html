@@ -983,5 +983,79 @@
             document.getElementById('informacion').classList.add('hidden');
         }
     </script>
+.footer-ciclo {
+    background-color: #1a0b2e; /* Tono oscuro acorde a la estética */
+    color: #ffffff;
+    padding-re: 60px 20px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-col h3, 
+.footer-col h4 {
+    color: #00e5ff; /* O el tono turquesa/cyan que venís usando */
+    margin-bottom: 15px;
+}
+
+.footer-col p, 
+.footer-col li a {
+    color: #d1d5db;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-socials {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.footer-socials a:hover {
+    background-color: #db2777; /* Fucsia de acento */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
 </body>
 </html>
