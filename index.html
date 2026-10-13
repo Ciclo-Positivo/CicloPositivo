@@ -984,100 +984,174 @@ function cerrarInformacion() {
         }
     </script>
 
-    <!-- El Footer HTML -->
+    <!-- Footer Estilo Red Psicosexual adaptado a Ciclo Positivo -->
     <footer class="footer-ciclo">
         <div class="footer-container">
+            <!-- Columna 1: Info y Badges -->
             <div class="footer-col">
                 <h3>Asociación Ciclo Positivo</h3>
-                <p>Trabajando por los derechos, la prevención y el acompañamiento en salud, ESI y VIH.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Navegación</h4>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#quienes-somos">Quiénes somos</a></li>
-                    <li><a href="#acciones">Nuestras acciones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contacto</h4>
-                <p><i class="fas fa-envelope"></i> contacto@ciclopositivo.org</p>
-                <div class="footer-socials">
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="mailto:contacto@ciclopositivo.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <p>Un espacio para informar, acompañar y pensar todo lo que nos atraviesa en comunidad, integrando derechos, salud y ESI.</p>
+                <div class="footer-tags">
+                    <span class="footer-tag">Salud Colectiva</span>
+                    <span class="footer-tag">ESI & Derechos</span>
                 </div>
             </div>
+
+            <!-- Columna 2: Navegación -->
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')">Quiénes Somos</a></li>
+                    <li><a href="#acciones" onclick="mostrarSeccion('acciones')">Nuestras Acciones</a></li>
+                    <li><a href="#informacion" onclick="mostrarInformacion('vih')">Todo sobre VIH</a></li>
+                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto / Redes -->
+            <div class="footer-col">
+                <h4>CONTACTO</h4>
+                <a href="https://instagram.com" target="_blank" class="footer-contact-card">
+                    <i data-lucide="instagram" class="w-5 h-5 text-pink-400"></i>
+                    <div>
+                        <span class="block text-xs text-gray-400">SEGUINOS EN INSTAGRAM</span>
+                        <span class="font-medium text-white">@ciclopositivo</span>
+                    </div>
+                </a>
+            </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; 2026 Asociación Ciclo Positivo. Todos los derechos reservados.</p>
+            <p class="footer-subtext">Construyendo redes y cuidados colectivos</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="scroll-top-btn" aria-label="Volver arriba">
+                <i data-lucide="arrow-up" class="w-4 h-4"></i>
+            </button>
         </div>
     </footer>
 
-    <!-- Los estilos CSS metidos dentro de <style> para que funcionen -->
+    <!-- Estilos CSS exactos del footer -->
     <style>
         .footer-ciclo {
-            background-color: #1a0b2e;
-            color: #ffffff;
-            padding: 60px 20px 20px 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: #1a0b1c;
+            color: #f3f4f6;
+            padding: 60px 20px 30px 20px;
+            font-family: inherit;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
         .footer-container {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
             padding-bottom: 40px;
         }
-        .footer-col h3, .footer-col h4 {
-            color: #00e5ff;
-            margin-bottom: 15px;
+        .footer-col h3 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
-        .footer-col p, .footer-col li a {
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 18px;
+        }
+        .footer-col p {
             color: #d1d5db;
             font-size: 0.95rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+        .footer-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .footer-tag {
+            background-color: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #e5e7eb;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
         }
         .footer-col ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         .footer-col ul li {
             margin-bottom: 10px;
         }
-        .footer-col ul li a:hover {
-            color: #ffffff;
-            text-decoration: underline;
+        .footer-col ul li a {
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
         }
-        .footer-socials {
-            margin-top: 15px;
+        .footer-col ul li a:hover {
+            color: #00e5ff;
+        }
+        .footer-contact-card {
             display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .footer-contact-card:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+        }
+        .footer-bottom {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #9ca3af;
             gap: 15px;
         }
-        .footer-socials a {
-            background-color: rgba(255, 255, 255, 0.1);
+        .footer-subtext {
+            color: #9ca3af;
+            margin: 0;
+        }
+        .scroll-top-btn {
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             color: #ffffff;
-            width: 36px;
-            height: 36px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background 0.3s;
+            cursor: pointer;
+            transition: background 0.2s;
         }
-        .footer-socials a:hover {
-            background-color: #db2777;
+        .scroll-top-btn:hover {
+            background-color: rgba(255, 255, 255, 0.15);
         }
-        .footer-bottom {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 0.85rem;
-            color: #9ca3af;
-        }
+    </style>
+
+    <!-- Asegura que los iconos de Lucide se rendericen en el footer nuevo -->
+    <script>
+        setTimeout(() => { lucide.createIcons(); }, 100);
+    </script>
+</body>
+</html>
     </style>
 
 </body>
