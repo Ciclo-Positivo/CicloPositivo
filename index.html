@@ -979,82 +979,106 @@
             mobileMenu.classList.add('hidden');
         }
 
-        function cerrarInformacion() {
+function cerrarInformacion() {
             document.getElementById('informacion').classList.add('hidden');
         }
     </script>
-.footer-ciclo {
-    background-color: #1a0b2e; /* Tono oscuro acorde a la estética */
-    color: #ffffff;
-    padding-re: 60px 20px 20px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
 
-.footer-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    padding-bottom: 40px;
-}
+    <!-- El Footer HTML -->
+    <footer class="footer-ciclo">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Asociación Ciclo Positivo</h3>
+                <p>Trabajando por los derechos, la prevención y el acompañamiento en salud, ESI y VIH.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes somos</a></li>
+                    <li><a href="#acciones">Nuestras acciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@ciclopositivo.org</p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:contacto@ciclopositivo.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asociación Ciclo Positivo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-.footer-col h3, 
-.footer-col h4 {
-    color: #00e5ff; /* O el tono turquesa/cyan que venís usando */
-    margin-bottom: 15px;
-}
+    <!-- Los estilos CSS metidos dentro de <style> para que funcionen -->
+    <style>
+        .footer-ciclo {
+            background-color: #1a0b2e;
+            color: #ffffff;
+            padding: 60px 20px 20px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding-bottom: 40px;
+        }
+        .footer-col h3, .footer-col h4 {
+            color: #00e5ff;
+            margin-bottom: 15px;
+        }
+        .footer-col p, .footer-col li a {
+            color: #d1d5db;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .footer-socials {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        .footer-socials a {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .footer-socials a:hover {
+            background-color: #db2777;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+    </style>
 
-.footer-col p, 
-.footer-col li a {
-    color: #d1d5db;
-    font-size: 0.95rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-.footer-socials {
-    margin-top: 15px;
-    display: flex;
-    gap: 15px;
-}
-
-.footer-socials a {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s;
-}
-
-.footer-socials a:hover {
-    background-color: #db2777; /* Fucsia de acento */
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    font-size: 0.85rem;
-    color: #9ca3af;
-}</body>
+</body>
 </html>
