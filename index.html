@@ -984,159 +984,53 @@ function cerrarInformacion() {
         }
     </script>
 
-    <!-- FOOTER NUEVO DE TRES COLUMNAS -->
-    <footer class="footer-ciclo">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h3>Asociación Ciclo Positivo</h3>
-                <p>Un espacio para informar, acompañar y pensar todo lo que nos atraviesa en comunidad, integrando derechos, salud y ESI.</p>
-                <div class="footer-tags">
-                    <span class="footer-tag">Salud Colectiva</span>
-                    <span class="footer-tag">ESI & Derechos</span>
+<!-- FOOTER DE TRES COLUMNAS CON TAILWIND PURO -->
+    <footer class="bg-[#1a0b1c] text-slate-200 border-t border-white/10 py-16 px-6 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
+            
+            <!-- Columna 1 -->
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-white">Asociación Ciclo Positivo</h3>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Un espacio para informar, acompañar y pensar todo lo que nos atraviesa en comunidad, integrando derechos, salud y ESI.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="bg-white/10 border border-white/20 text-slate-200 px-3.5 py-1.5 rounded-full text-xs">Salud Colectiva</span>
+                    <span class="bg-white/10 border border-white/20 text-slate-200 px-3.5 py-1.5 rounded-full text-xs">ESI & Derechos</span>
                 </div>
             </div>
-            <div class="footer-col">
-                <h4>NAVEGACIÓN</h4>
-                <ul>
-                    <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')">Quiénes Somos</a></li>
-                    <li><a href="#acciones" onclick="mostrarSeccion('acciones')">Nuestras Acciones</a></li>
-                    <li><a href="#informacion" onclick="mostrarInformacion('vih')">Todo sobre VIH</a></li>
-                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+
+            <!-- Columna 2 -->
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Navegación</h4>
+                <ul class="space-y-2.5 text-sm text-slate-300">
+                    <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')" class="hover:text-[#41b8bf] transition-colors">Quiénes Somos</a></li>
+                    <li><a href="#acciones" onclick="mostrarSeccion('acciones')" class="hover:text-[#41b8bf] transition-colors">Nuestras Acciones</a></li>
+                    <li><a href="#informacion" onclick="mostrarInformacion('vih')" class="hover:text-[#41b8bf] transition-colors">Todo sobre VIH</a></li>
+                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')" class="hover:text-[#41b8bf] transition-colors">Contacto</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>CONTACTO</h4>
-                <a href="https://instagram.com/ciclo.positivo" target="_blank" class="footer-contact-card">
+
+            <!-- Columna 3 -->
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Contacto</h4>
+                <a href="https://instagram.com/ciclo.positivo" target="_blank" class="flex items-center gap-3 bg-white/5 border border-white/10 p-4 rounded-xl hover:bg-white/10 transition-colors">
                     <i data-lucide="instagram" class="w-5 h-5 text-pink-400"></i>
                     <div>
-                        <span class="block text-xs text-gray-400">SEGUINOS EN INSTAGRAM</span>
-                        <span class="font-medium text-white">@ciclopositivo</span>
+                        <span class="block text-[10px] text-slate-400 font-semibold tracking-wide">SEGUINOS EN INSTAGRAM</span>
+                        <span class="text-sm font-medium text-white">@ciclopositivo</span>
                     </div>
                 </a>
             </div>
+
         </div>
-        <div class="footer-bottom">
+
+        <!-- Barra inferior -->
+        <div class="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
             <p>&copy; 2026 Asociación Ciclo Positivo. Todos los derechos reservados.</p>
-            <p class="footer-subtext">Construyendo redes y cuidados colectivos</p>
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="scroll-top-btn" aria-label="Volver arriba">
+            <p>Construyendo redes y cuidados colectivos</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="bg-white/10 border border-white/20 text-white w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer" aria-label="Volver arriba">
                 <i data-lucide="arrow-up" class="w-4 h-4"></i>
             </button>
         </div>
     </footer>
-
-    <style>
-        .footer-ciclo {
-            background-color: #1a0b1c;
-            color: #f3f4f6;
-            padding: 60px 20px 30px 20px;
-            font-family: inherit;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-        }
-        .footer-container {
-            max-width: 1150px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            padding-bottom: 40px;
-        }
-        .footer-col h3 {
-            color: #ffffff;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        .footer-col h4 {
-            color: #ffffff;
-            font-size: 0.9rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            margin-bottom: 18px;
-        }
-        .footer-col p {
-            color: #d1d5db;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 16px;
-        }
-        .footer-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
-        }
-        .footer-tag {
-            background-color: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            color: #e5e7eb;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-        }
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
-        .footer-col ul li a {
-            color: #d1d5db;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-        .footer-col ul li a:hover {
-            color: #00e5ff;
-        }
-        .footer-contact-card {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background-color: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 14px 18px;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .footer-contact-card:hover {
-            background-color: rgba(255, 255, 255, 0.08);
-        }
-        .footer-bottom {
-            max-width: 1150px;
-            margin: 0 auto;
-            padding-top: 25px;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 0.85rem;
-            color: #9ca3af;
-            gap: 15px;
-        }
-        .footer-subtext {
-            color: #9ca3af;
-            margin: 0;
-        }
-        .scroll-top-btn {
-            background-color: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            color: #ffffff;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .scroll-top-btn:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-        }
-    </style>
-</body>
-</html>
