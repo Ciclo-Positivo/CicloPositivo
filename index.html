@@ -66,43 +66,6 @@
         .animate-spin-slow {
             animation: spinSlow 40s linear infinite;
         }
-        <style>
-    /* Ajustes específicos de proporciones para celulares */
-    @media (max-width: 767px) {
-        /* Espaciado general entre secciones en celular */
-        section {
-            padding-top: 3.5rem !important;
-            padding-bottom: 3.5rem !important;
-        }
-        
-        /* Títulos principales más proporcionados en celular */
-        h1.text-3xl, h1.text-4xl {
-            font-size: 1.65rem !important;
-            line-height: 1.25 !important;
-        }
-
-        h2 {
-            font-size: 1.35rem !important;
-            line-height: 1.3 !important;
-        }
-
-        h3 {
-            font-size: 1.15rem !important;
-            line-height: 1.3 !important;
-        }
-
-        /* Párrafos y textos con tamaño y lectura ideal en celular */
-        p {
-            font-size: 0.875rem !important;
-            line-height: 1.6 !important;
-        }
-
-        /* Márgenes internos de contenedores móviles */
-        .max-w-6xl, .max-w-4xl, .max-w-3xl {
-            padding-left: 1.25rem !important;
-            padding-right: 1.25rem !important;
-        }
-    }
     </style>
 </head>
 <body class="antialiased">
@@ -215,10 +178,10 @@
         </div>
     </header>
 
-   <!-- HERO SECTION -->
+    <!-- HERO SECTION -->
     <section class="relative pt-6 sm:pt-10 pb-4 sm:pb-8 md:py-24 text-white overflow-hidden">
         
-        <!-- VERSIÓN COMPUTADORA (INTACTA) -->
+        <!-- VERSIÓN COMPUTADORA -->
         <div class="hidden md:block">
             <div class="max-w-6xl mx-auto px-4 relative z-10 grid grid-cols-12 gap-6 items-center text-left">
                 <div class="col-span-7">
@@ -255,33 +218,20 @@
             </div>
         </div>
 
-<!-- VERSIÓN CELULAR SIN LOGO, CON ESPACIADOS Y LÍNEA DIVISORIA -->
+        <!-- VERSIÓN CELULAR -->
         <div class="block md:hidden text-center">
             <div class="max-w-6xl mx-auto px-4 relative z-10">
+                <span class="inline-block text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+                    Asociación Civil Ciclo Positivo
+                </span>
+                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3 leading-tight uppercase">
+                    ACTIVISMO BASADO EN EVIDENCIA
+                </h1>
+                <p class="text-sm text-purple-100 mb-4 leading-relaxed font-normal px-2">
+                    Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+                </p>
                 
-                <!-- 1. Etiqueta superior con espacio hacia abajo -->
-                <div style="margin-bottom: 1.75rem;">
-                    <span class="inline-block text-[11px] font-semibold px-3.5 py-1.5 rounded-full uppercase tracking-wider text-slate-900 shadow-sm" style="background-color: #41b8bf;">
-                        Asociación Civil Ciclo Positivo
-                    </span>
-                </div>
-
-                <!-- 2. Título principal con espacio hacia abajo -->
-                <div style="margin-bottom: 1.75rem;">
-                    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight uppercase">
-                        ACTIVISMO BASADO EN EVIDENCIA
-                    </h1>
-                </div>
-
-                <!-- 3. Texto descriptivo con espacio hacia los botones -->
-                <div style="margin-bottom: 2.25rem;">
-                    <p class="text-sm text-purple-100 leading-relaxed font-normal px-2">
-                        Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-                    </p>
-                </div>
-                
-                <!-- 4. Botones de acceso rápido con margen inferior -->
-                <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold" style="margin-bottom: 2.5rem;">
+                <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold mb-4">
                     <a href="#quienes-somos" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1" style="background-color: #41b8bf;">
                         <i data-lucide="users" class="w-4 h-4"></i> Quiénes somos
                     </a>
@@ -296,12 +246,13 @@
                     </button>
                 </div>
 
-                <!-- 5. Línea divisoria y pequeño espacio antes del carrusel -->
-                <div class="w-full border-t border-white/20 pt-4"></div>
-
+                <div class="flex justify-center items-center py-1 pointer-events-none">
+                    <img src="logo-animado.png" alt="Logo animado" class="w-[110px] opacity-100 animate-spin-slow object-contain">
+                </div>
             </div>
         </div>
-        
+    </section>
+
     <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
     <div class="max-w-6xl mx-auto px-4 text-left mt-8">
         <div class="flex items-center justify-between mb-4 px-2">
@@ -435,24 +386,14 @@
         </div>
     </div>
 
-  <!-- SECCIÓN QUIÉNES SOMOS -->
+    <!-- SECCIÓN QUIÉNES SOMOS (SIN RECUADRO, ABIERTA) -->
     <section id="quienes-somos" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="flex flex-col items-center text-center">
             
-            <!-- LÍNEA DIVISORIA SOLO EN CELULAR -->
-            <div class="w-full border-t border-white/25 mb-10 block md:hidden"></div>
-
             <div class="w-full max-w-3xl mb-6">
                 <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Quiénes Somos</span>
-                
-                <!-- TÍTULO VERSIÓN COMPUTADORA (INTACTO EN UN SOLO RENGLÓN) -->
-                <h2 class="hidden md:block text-3xl font-bold tracking-tight uppercase leading-snug text-white">
-                    Compromiso con la equidad y la salud
-                </h2>
-
-                <!-- TÍTULO VERSIÓN CELULAR (EN DOS RENGLONES) -->
-                <h2 class="block md:hidden text-2xl font-bold tracking-tight uppercase leading-snug text-white">
-                    COMPROMISO CON LA<br>EQUIDAD Y LA SALUD
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase leading-snug text-white">
+                    Compromiso con la equidad<br>y la salud
                 </h2>
             </div>
             
@@ -460,8 +401,7 @@
                 <img src="equipo.jpg" alt="Colectivo Ciclo Positivo" class="w-full h-auto block object-cover">
             </div>
 
-            <!-- Texto completamente centrado -->
-            <div class="w-full max-w-3xl space-y-4 text-purple-100 text-sm md:text-base font-normal text-center leading-relaxed mb-12">
+            <div class="w-full max-w-3xl space-y-4 text-purple-100 text-sm md:text-base font-normal text-left md:text-center leading-relaxed mb-12">
                 <p>
                     Somos un colectivo compuesto por activistas, militantes, estudiantes, profesionales de la salud y las ciencias sociales que se reúne para trabajar en pos de la promoción y la protección de los derechos, brindar acompañamiento en asuntos jurídicos, psicosociales y asistencia integral para las poblaciones diversas y en situación de vulnerabilidad.
                 </p>
@@ -470,23 +410,18 @@
                 </p>
             </div>
 
-<!-- SECCIÓN DE CARTELES DE LUCHA -->
+            <!-- SECCIÓN DE CARTELES DE LUCHA -->
             <div class="w-full text-left mt-6 pt-8 border-t border-white/20">
                 <div class="text-center mb-10">
                     <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-2 inline-block text-slate-900" style="background-color: #41b8bf;">Nuestra Identidad</span>
-                    
-                    <!-- TÍTULO ORIGINAL EN UN SOLO RENGLÓN -->
-                    <h3 class="text-xl md:text-2xl font-bold uppercase text-white tracking-tight">
+                    <h3 class="text-xl md:text-2xl font-bold uppercase text-white">
                         Carteles que llevan nuestra voz a las calles
                     </h3>
-
-                    <!-- TEXTO DIFERENCIADO SEGÚN DISPOSITIVO -->
-                    <p class="hidden md:block text-xs md:text-sm text-purple-200 mt-1">Pasá el cursor por cada cartel para conocer la consigna que nos mueve.</p>
-                    <p class="block md:hidden text-xs md:text-sm text-purple-200 mt-1">Tocá cada cartel para conocer la consigna que nos mueve.</p>
+                    <p class="text-xs md:text-sm text-purple-200 mt-1">Pasá el cursor o tocá cada cartel para conocer la consigna que nos mueve.</p>
                 </div>
 
-                <!-- VERSIÓN COMPUTADORA (GRILLA ORIGINAL INTACTA) -->
-                <div class="hidden md:grid grid-cols-3 gap-8 pt-4 px-2">
+                <!-- Grilla de 3x3 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-4 px-2">
                     
                     <!-- 1: odio.jpeg -->
                     <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
@@ -578,113 +513,103 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- VERSIÓN CELULAR (CON EL CLIC PARA LEER RECUPERADO) -->
-                <div class="block md:hidden">
-                    <div class="grid grid-flow-col auto-cols-[85%] gap-4 overflow-x-auto no-scrollbar pb-4 pt-2 px-2 snap-x">
-                        
-                        <!-- 1 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="odio.jpeg" alt="Más Orgullo y Unidad" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Comunidad</span>
-                                <h4 class="font-bold text-base mb-2">Más Orgullo y Unidad</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Frente a los discursos de odio y la violencia, respondemos construyendo comunidad y defendiendo nuestros derechos con orgullo.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
+    <!-- SECCIÓN: APORTÁ A CICLO -->
+    <section id="aportar" class="seccion-oculta hidden py-20 px-4 max-w-4xl mx-auto">
+        <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Sostenibilidad Comunitaria</span>
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase" style="color: #2e1044;">Aportá a Ciclo</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4 text-slate-600 text-sm md:text-base font-normal leading-relaxed">
+                <p>
+                    Desde hace dos años, los aportes individuales de personas como vos son nuestra única fuente de financiamiento. Y eso hace que cada suscripción, literalmente, nos permita seguir.
+                </p>
+                <p>
+                    Con tu aporte acompañamos a personas frente a un diagnóstico o una vulneración de derechos, sostenemos grupos de encuentro, producimos información sobre VIH y salud, formamos activistas, hacemos campañas, impulsamos cambios en políticas públicas y construimos un Ciclo cada vez más federal.
+                </p>
+                <p class="font-medium text-slate-800">
+                    No buscamos que pocas personas aporten mucho. Queremos que muchas podamos aportar un poquito.
+                </p>
+                <p class="font-bold text-slate-900" style="color: #2e1044;">
+                    Si podés acompañarnos, la suscripción es de $300 por día.
+                </p>
+                <p class="pt-2 text-slate-600">
+                    Gracias por estar ahí, por confiar y por ofrecer tu parte.<br>
+                    <strong>Equipo de Asociación Ciclo Positivo</strong>
+                </p>
+                <div class="text-center pt-6">
+                    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=6f3a7e79555a4caf911629ad79955f9f" target="_blank" class="inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-md hover:opacity-90 text-base" style="background-color: #e30381;">
+                        <i data-lucide="heart" class="w-5 h-5"></i> Aportá en ciclo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: ACTIVIDADES -->
+    <section id="actividades" class="seccion-oculta hidden py-20 px-4 max-w-4xl mx-auto">
+        <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Comunidad y Cultura</span>
+                <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase" style="color: #2e1044;">Nuestras Actividades</h2>
+                <p class="text-xs md:text-sm text-slate-500 mt-1">Pasá el cursor o tocá cada volante para ver toda la información detallada.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="actividad-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rounded-2xl border border-slate-200">
+                    <img src="gruposencuentro.jpg" alt="Grupos de Encuentro" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-10">
+                    <div class="actividad-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-2xl space-y-2 overflow-y-auto">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded w-max text-slate-900" style="background-color: #41b8bf;">Actividad</span>
+                        <h3 class="text-base font-bold">Grupos de Encuentro</h3>
+                        <p class="text-[11px] text-purple-100 leading-relaxed font-normal">
+                            El grupo de encuentro es un espacio para compartir, escucharnos y acompañarnos, desde una mirada de salud integral comunitaria.
+                        </p>
+                        <p class="text-[11px] text-purple-100 leading-relaxed font-normal">
+                            Los grupos están abiertos a personas con y sin VIH que quieran encontrarse, hacer preguntas, intercambiar experiencias y construir redes de apoyo.
+                        </p>
+                        <div class="bg-purple-900/50 border border-purple-800 p-2.5 rounded-xl text-[11px] text-purple-100 space-y-1">
+                            <p>📍 <strong>CABA:</strong> Todos los viernes de 17:30 a 19:00 hs</p>
+                            <p>📍 <strong>Ushuaia:</strong> Un sábado por mes de 18 a 20 hs</p>
+                            <p class="text-purple-200 font-medium pt-0.5">💜 Si vivís en Córdoba o Mendoza, anotate para recibir novedades.</p>
                         </div>
-
-                        <!-- 2 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="discursos.jpeg" alt="Basta de Estigma" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                                <h4 class="font-bold text-base mb-2">Basta de Estigma</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Los discursos discriminatorios generan exclusión real y atentan contra la vida y la salud integral de las personas.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
+                        <div class="pt-1 text-center">
+                            <a href="https://bit.ly/gruposdeencuentro" target="_blank" class="inline-flex items-center gap-1.5 text-white text-[11px] font-semibold px-4 py-2 rounded-xl transition-all shadow-sm hover:opacity-90" style="background-color: #e30381;">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Inscribite a los Grupos
+                            </a>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- 3 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="cura.jpeg" alt="Exigimos la Cura" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Ciencia</span>
-                                <h4 class="font-bold text-base mb-2">Exigimos la Cura ¡Ya!</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Reclamamos inversión estatal en investigación científica para alcanzar una cura definitiva y universal para el VIH.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
+                <div class="actividad-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rounded-2xl border border-slate-200">
+                    <img src="folclore2.jpg" alt="Clases de Folclore" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-10">
+                    <div class="actividad-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-2xl space-y-2 overflow-y-auto">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded w-max text-slate-900" style="background-color: #41b8bf;">Actividad</span>
+                        <h3 class="text-base font-bold">Clases de Folclore</h3>
+                        <p class="text-[11px] text-purple-100 leading-relaxed font-normal">
+                            Abrimos las puertas de nuestra sede en CABA para encontrarnos también desde la danza y la cultura popular con el profe David Ceballos Tulian.
+                        </p>
+                        <p class="text-[11px] text-purple-100 leading-relaxed font-normal">
+                            Bailamos nuestras danzas populares desde la diversidad, cuestionando roles tradicionales de género y construyendo un espacio libre. 🏳️‍🌈
+                        </p>
+                        <div class="bg-purple-900/50 border border-purple-800 p-2.5 rounded-xl text-[11px] text-purple-100 space-y-1">
+                            <p>🗓️ <strong>Miércoles de 17.30 a 19 h</strong></p>
+                            <p>📍 <strong>Sede CABA — Actividad libre y gratuita</strong></p>
+                            <p class="text-purple-200 font-medium pt-0.5">✨ No necesitás experiencia previa.</p>
                         </div>
-
-                        <!-- 4 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="indetectable.jpeg" alt="Indetectable = Intransmisible" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Evidencia</span>
-                                <h4 class="font-bold text-base mb-2">I = I</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Quienes viven con VIH y toman su tratamiento con carga viral indetectable no transmiten el virus por vía sexual.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
+                        <div class="pt-1 text-center">
+                            <a href="https://bit.ly/folcloreenciclo" target="_blank" class="inline-flex items-center gap-1.5 text-white text-[11px] font-semibold px-4 py-2 rounded-xl transition-all shadow-sm hover:opacity-90" style="background-color: #e30381;">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Inscribite a Folclore
+                            </a>
                         </div>
-
-                        <!-- 5 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="trabajo.jpeg" alt="Trabajo Sexual" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Inclusión</span>
-                                <h4 class="font-bold text-base mb-2">Trabajo Sexual es Trabajo</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Acompañamos y defendemos los derechos laborales, el reconocimiento y la protección social.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
-                        </div>
-
-                        <!-- 6 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="ESI.jpeg" alt="La ESI Salva Vidas" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Educación</span>
-                                <h4 class="font-bold text-base mb-2">La ESI Salva Vidas</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Herramienta fundamental para prevenir violencias, promover la salud y construir juventudes libres.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
-                        </div>
-
-                        <!-- 7 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="mujeres.jpeg" alt="Mujeres con VIH" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Protagonismo</span>
-                                <h4 class="font-bold text-base mb-2">Mujeres con VIH</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Visibilizamos las vivencias, la autonomía y el liderazgo histórico de las mujeres en la resistencia.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
-                        </div>
-
-                        <!-- 8 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="maternidades.jpeg" alt="Maternidades Libres" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                                <h4 class="font-bold text-base mb-2">Maternidades Libres</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Derecho pleno a decidir sobre nuestros cuerpos, gestar y maternar con información y sin estigmas.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
-                        </div>
-
-                        <!-- 9 -->
-                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
-                            <img src="sabes.jpeg" alt="Reducción de Daños" class="w-full h-auto block transition-all duration-300">
-                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
-                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Salud</span>
-                                <h4 class="font-bold text-base mb-2">Reducción de Daños</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed">Abordaje pragmático frente al consumo, priorizando el cuidado, la información y el acompañamiento.</p>
-                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
     <!-- SECCIÓN DE INFORMACIÓN OCULTA -->
     <section id="informacion" class="seccion-oculta hidden py-10 px-4 max-w-6xl mx-auto">
@@ -1097,3 +1022,4 @@
     </script>
 </body>
 </html>
+
