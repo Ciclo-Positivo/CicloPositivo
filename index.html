@@ -842,69 +842,66 @@
         </div>
     </section>
 
-    <!-- GALERÍA -->
+   <!-- GALERÍA (EN FORMATO CARRUSEL DESLIZANTE) -->
     <section id="galeria" class="seccion-oculta hidden py-20 px-4 max-w-5xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
+            
             <div class="text-center max-w-2xl mx-auto mb-8">
                 <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Galería</span>
                 <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase" style="color: #2e1044;">Comunidad en movimiento</h2>
+                <p class="text-xs md:text-sm text-slate-600 mt-1">Desliza para ver los momentos compartidos en nuestros campamentos y encuentros.</p>
             </div>
-            
-            <!-- Grilla de fotos de campamentos y equipo -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                
-                <!-- Foto de equipo existente -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="equipo.jpg" alt="Encuentro Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
-                </div>
 
-                <!-- Campamento 1 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento1.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 2 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento2.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 3 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento3.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 4 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento4.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 5 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento5.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 6 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento6.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Campamento 7 -->
-                <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
-                    <img src="campamento7.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl"[cite: 2]>
-                </div>
-
-                <!-- Bloque de texto decorativo de la red -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-200 shadow-xs flex items-center justify-center p-8 text-center md:col-span-2" style="background-color: #fdf2f8;">
-                    <div>
-                        <i data-lucide="heart" class="w-10 h-10 mx-auto mb-3" style="color: #e30381;"></i>
-                        <h4 class="font-bold text-lg mb-1 uppercase" style="color: #2e1044;">Nuestra Red</h4>
-                        <p class="text-sm text-slate-600 font-normal">Construyendo redes y acompañamiento todos los días.</p>
+            <!-- Contenedor del Carrusel de Fotos -->
+            <div class="relative">
+                <div id="carrusel-galeria" class="grid grid-flow-col auto-cols-[85%] sm:auto-cols-[calc(50%-8px)] md:auto-cols-[calc(33.333%-11px)] gap-4 overflow-x-auto no-scrollbar pb-4 pt-2 px-1 snap-x">
+                    
+                    <!-- Foto 1: Equipo -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="equipo.jpg" alt="Encuentro Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
                     </div>
-                </div>
 
+                    <!-- Campamento 1 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento1.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 2 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento2.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 3 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento3.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 4 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento4.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 5 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento5.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 6 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento6.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                    <!-- Campamento 7 -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs snap-start">
+                        <img src="campamento7.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">[cite: 2]
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </section>
+    
     <!-- FOOTER CON EL COLOR ROSA/VIOLETA ORIGINAL -->
     <footer class="bg-[#4a0e4e] text-slate-200 border-t border-white/10 py-16 px-6 mt-20">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
