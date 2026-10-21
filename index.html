@@ -509,6 +509,113 @@
                 </div>
             </div>
         </div>
+
+        <!-- VERSIÓN CELULAR (CARRUSEL TÁCTIL CON CLIC/TOQUE PARA VER TEXTO) -->
+                <div class="block md:hidden">
+                    <div id="carrusel-carteles" class="grid grid-flow-col auto-cols-[85%] gap-4 overflow-x-auto no-scrollbar pb-4 pt-2 px-2 snap-x">
+                        
+                        <!-- 1 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="odio.jpeg" alt="Más Orgullo y Unidad" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Comunidad</span>
+                                <h4 class="font-bold text-base mb-2">Más Orgullo y Unidad</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Frente a los discursos de odio y la violencia, respondemos construyendo comunidad y defendiendo nuestros derechos con orgullo.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="discursos.jpeg" alt="Basta de Estigma" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
+                                <h4 class="font-bold text-base mb-2">Basta de Estigma</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Los discursos discriminatorios generan exclusión real y atentan contra la vida y la salud integral de las personas.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="cura.jpeg" alt="Exigimos la Cura" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Ciencia</span>
+                                <h4 class="font-bold text-base mb-2">Exigimos la Cura ¡Ya!</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Reclamamos inversión estatal en investigación científica para alcanzar una cura definitiva y universal para el VIH.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="indetectable.jpeg" alt="Indetectable = Intransmisible" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Evidencia</span>
+                                <h4 class="font-bold text-base mb-2">I = I</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Quienes viven con VIH y toman su tratamiento con carga viral indetectable no transmiten el virus por vía sexual.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="trabajo.jpeg" alt="Trabajo Sexual" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Inclusión</span>
+                                <h4 class="font-bold text-base mb-2">Trabajo Sexual es Trabajo</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Acompañamos y defendemos los derechos laborales, el reconocimiento y la protección social.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="ESI.jpeg" alt="La ESI Salva Vidas" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Educación</span>
+                                <h4 class="font-bold text-base mb-2">La ESI Salva Vidas</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Herramienta fundamental para prevenir violencias, promover la salud y construir juventudes libres.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="mujeres.jpeg" alt="Mujeres con VIH" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Protagonismo</span>
+                                <h4 class="font-bold text-base mb-2">Mujeres con VIH</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Visibilizamos las vivencias, la autonomía y el liderazgo histórico de las mujeres en la resistencia.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="maternidades.jpeg" alt="Maternidades Libres" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
+                                <h4 class="font-bold text-base mb-2">Maternidades Libres</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Derecho pleno a decidir sobre nuestros cuerpos, gestar y maternar con información y sin estigmas.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                        <!-- 9 -->
+                        <div onclick="this.classList.toggle('active')" class="cartel-card-mobile relative overflow-hidden bg-transparent cursor-pointer shadow-xl snap-start w-full mx-auto rounded-xl">
+                            <img src="sabes.jpeg" alt="Reducción de Daños" class="w-full h-auto block transition-all duration-300">
+                            <div class="cartel-info-mobile absolute inset-0 bg-[#2e1044]/95 p-6 flex flex-col justify-center opacity-0 pointer-events-none transition-opacity duration-300 text-white rounded-xl">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Salud</span>
+                                <h4 class="font-bold text-base mb-2">Reducción de Daños</h4>
+                                <p class="text-xs text-purple-100 leading-relaxed">Abordaje pragmático frente al consumo, priorizando el cuidado, la información y el acompañamiento.</p>
+                                <span class="text-[10px] text-purple-300 mt-4 italic">Tocá nuevamente para ver el cartel</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
     </section>
 
     <!-- SECCIÓN: APORTÁ A CICLO -->
