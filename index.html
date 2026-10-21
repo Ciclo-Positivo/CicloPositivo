@@ -178,44 +178,43 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative py-14 md:py-24 text-white overflow-hidden text-center">
+<!-- HERO SECTION -->
+<section class="relative py-14 md:py-24 text-white overflow-hidden text-center">
     
-    <!-- Video animado de fondo con transparencia -->
-    <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-        <video autoplay loop muted playsinline class="w-[320px] md:w-[480px] opacity-10 animate-spin-slow object-contain">
-            <source src="logo-animado.web," type="video/webm">
+    <!-- Video WebM con transparencia real y centrado -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+        <video autoplay loop muted playsinline class="w-[400px] md:w-[600px] opacity-30 animate-spin-slow object-contain -translate-y-6">
+            <source src="logo-animado.webm" type="video/webm">
         </video>
     </div>
 
-    <!-- Tu contenido existente sigue acá abajo -->
+    <!-- Contenido principal -->
     <div class="max-w-6xl mx-auto px-4 relative z-10">
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
-                Asociación Civil Ciclo Positivo
-            </span>
-            <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase">
-                ACTIVISMO BASADO EN EVIDENCIA
-            </h1>
-            <p class="text-sm md:text-xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed font-normal">
-                Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-            </p>
-            
-            <!-- Botones de Acceso Rápido -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-sm font-semibold mb-12">
-                <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
-                    <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
-                </a>
-                <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="calendar" class="w-5 h-5"></i> Actividades
-                </button>
-                <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="heart-handshake" class="w-5 h-5"></i> Aportá a Ciclo
-                </button>
-                <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="ribbon" class="w-5 h-5"></i> VIH
-                </button>
-            </div>
+        <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+            Asociación Civil Ciclo Positivo
+        </span>
+        <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase">
+            ACTIVISMO BASADO EN EVIDENCIA
+        </h1>
+        <p class="text-sm md:text-xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed font-normal">
+            Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+        </p>
+        
+        <!-- Botones de Acceso Rápido -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-sm font-semibold mb-12">
+            <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
+                <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
+            </a>
+            <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                <i data-lucide="calendar" class="w-5 h-5"></i> Actividades
+            </button>
+            <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                <i data-lucide="heart-handshake" class="w-5 h-5"></i> Aportá a Ciclo
+            </button>
+            <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                <i data-lucide="ribbon" class="w-5 h-5">5</i> VIH
+            </button>
+        </div>
 
             <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
             <div class="max-w-6xl mx-auto text-left mt-8">
