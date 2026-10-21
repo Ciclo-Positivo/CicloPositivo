@@ -215,8 +215,8 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative pt-6 pb-8 md:py-24 text-white overflow-hidden">
+   <!-- HERO SECTION -->
+    <section class="relative pt-6 sm:pt-10 pb-4 sm:pb-8 md:py-24 text-white overflow-hidden">
         
         <!-- VERSIÓN COMPUTADORA (INTACTA) -->
         <div class="hidden md:block">
@@ -254,20 +254,34 @@
                 </div>
             </div>
         </div>
-<!-- VERSIÓN CELULAR ORIGINAL -->
+
+        <!-- VERSIÓN CELULAR CON ESPACIADOS ESPECÍFICOS -->
         <div class="block md:hidden text-center">
             <div class="max-w-6xl mx-auto px-4 relative z-10">
-                <span class="inline-block text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
-                    Asociación Civil Ciclo Positivo
-                </span>
-                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3 leading-tight uppercase">
-                    ACTIVISMO BASADO EN EVIDENCIA
-                </h1>
-                <p class="text-sm text-purple-100 mb-4 leading-relaxed font-normal px-2">
-                    Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-                </p>
                 
-                <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold mb-4">
+                <!-- 1. Etiqueta superior con margen inferior para separarla del título -->
+                <div style="margin-bottom: 1.5rem;">
+                    <span class="inline-block text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+                        Asociación Civil Ciclo Positivo
+                    </span>
+                </div>
+
+                <!-- 2. Título principal con margen inferior para separarlo del texto -->
+                <div style="margin-bottom: 1.5rem;">
+                    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight leading-tight uppercase">
+                        ACTIVISMO BASADO EN EVIDENCIA
+                    </h1>
+                </div>
+
+                <!-- 3. Texto descriptivo con margen inferior para separarlo de los botones -->
+                <div style="margin-bottom: 2rem;">
+                    <p class="text-sm text-purple-100 leading-relaxed font-normal px-2">
+                        Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+                    </p>
+                </div>
+                
+                <!-- 4. Botones de acceso rápido -->
+                <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold mb-2">
                     <a href="#quienes-somos" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1" style="background-color: #41b8bf;">
                         <i data-lucide="users" class="w-4 h-4"></i> Quiénes somos
                     </a>
@@ -281,6 +295,12 @@
                         <i data-lucide="ribbon" class="w-4 h-4"></i> VIH
                     </button>
                 </div>
+
+                <div class="flex justify-center items-center py-1 pointer-events-none">
+                    <img src="logo-animado.png" alt="Logo animado" class="w-[110px] opacity-100 animate-spin-slow object-contain">
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
