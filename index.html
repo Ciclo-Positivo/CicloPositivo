@@ -202,26 +202,21 @@
         </div>
     </div>
 
-  <!-- Botones de Acceso Rápido -->
+    <!-- Botones de Acceso Rápido (Abajo, alineados con el bloque izquierdo) -->
     <div class="max-w-6xl mx-auto px-4 relative z-10 mt-2">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl text-sm font-semibold">
-            
-            <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-white hover:text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 bg-[#41b8bf]/30 hover:bg-[#41b8bf] border border-[#41b8bf]/40 backdrop-blur-sm">
+            <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
                 <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
             </a>
-            
-            <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-white hover:text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border border-[#41b8bf]/40 cursor-pointer font-semibold text-sm bg-[#41b8bf]/30 hover:bg-[#41b8bf] backdrop-blur-sm">
+            <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
                 <i data-lucide="calendar" class="w-5 h-5"></i> Actividades
             </button>
-            
-            <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-white hover:text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border border-[#41b8bf]/40 cursor-pointer font-semibold text-sm bg-[#41b8bf]/30 hover:bg-[#41b8bf] backdrop-blur-sm">
+            <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
                 <i data-lucide="heart-handshake" class="w-5 h-5"></i> Aportá a Ciclo
             </button>
-            
-            <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-white hover:text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border border-[#41b8bf]/40 cursor-pointer font-semibold text-sm bg-[#41b8bf]/30 hover:bg-[#41b8bf] backdrop-blur-sm">
+            <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
                 <i data-lucide="ribbon" class="w-5 h-5"></i> VIH
             </button>
-            
         </div>
     </div>
 </section>
@@ -1037,3 +1032,4 @@ function cerrarInformacion() {
             </button>
         </div>
     </footer>
+
