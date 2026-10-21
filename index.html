@@ -842,7 +842,7 @@
         </div>
     </section>
 
-<!-- GALERÍA (CARRUSEL AUTOMÁTICO) -->
+<!-- GALERÍA (CON ANIMACIÓN AUTOMÁTICA DE CSS) -->
     <section id="galeria" class="seccion-oculta hidden py-20 px-4 max-w-5xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
             
@@ -852,48 +852,60 @@
                 <p class="text-xs md:text-sm text-slate-600 mt-1">Momentos compartidos en nuestros campamentos y encuentros.</p>
             </div>
 
-            <!-- Contenedor con ID para que el script lo mueva solo -->
-            <div class="relative">
-                <div id="carrusel-galeria" class="flex gap-4 overflow-x-auto no-scrollbar pb-4 px-1">
+            <!-- Contenedor con carrusel automático en bucle continuo -->
+            <div class="relative w-full overflow-hidden">
+                <div class="flex gap-4 w-max animate-marquee">
                     
-                    <!-- Foto 1: Equipo -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
+                    <!-- BLOQUE 1 DE FOTOS -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
                         <img src="equipo.jpg" alt="Encuentro Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 1 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento1.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento1.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento2.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento3.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento4.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento5.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento6.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento7.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
 
-                    <!-- Campamento 2 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento2.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <!-- BLOQUE 2 IDÉNTICO (PARA HACER EL BUCLE INFINITO SUAVE) -->
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="equipo.jpg" alt="Encuentro Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 3 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento3.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento1.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 4 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento4.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento2.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 5 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento5.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento3.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 6 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento6.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento4.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
-
-                    <!-- Campamento 7 -->
-                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] sm:w-[340px] flex-shrink-0">
-                        <img src="campamento7.jpg" alt="Campamento Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento5.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento6.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs w-[300px] flex-shrink-0">
+                        <img src="campamento7.jpg" alt="Campamento" class="w-full h-64 object-cover rounded-xl">
                     </div>
 
                 </div>
