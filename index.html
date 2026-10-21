@@ -63,9 +63,9 @@
                 transform: rotate(360deg);
             }
         }
-     .animate-spin-slow {
-    animation: spinSlow 40s linear infinite;
-}
+        .animate-spin-slow {
+            animation: spinSlow 40s linear infinite;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -177,231 +177,216 @@
             </a>
         </div>
     </header>
-<!-- HERO SECTION -->
-<section class="relative pt-6 sm:pt-10 pb-4 sm:pb-8 md:py-24 text-white overflow-hidden">
-    
-    <!-- ========================================== -->
-    <!-- VERSIÓN COMPUTADORA (INTACTA Y PERFECTA)   -->
-    <!-- ========================================== -->
-    <div class="hidden md:block">
-        <!-- Grilla de dos columnas -->
-        <div class="max-w-6xl mx-auto px-4 relative z-10 grid grid-cols-12 gap-6 items-center text-left">
-            
-            <!-- Columna Izquierda: Textos -->
-            <div class="col-span-7">
-                <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-6 sm:pt-10 pb-4 sm:pb-8 md:py-24 text-white overflow-hidden">
+        
+        <!-- VERSIÓN COMPUTADORA -->
+        <div class="hidden md:block">
+            <div class="max-w-6xl mx-auto px-4 relative z-10 grid grid-cols-12 gap-6 items-center text-left">
+                <div class="col-span-7">
+                    <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+                        Asociación Civil Ciclo Positivo
+                    </span>
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase">
+                        ACTIVISMO BASADO EN EVIDENCIA
+                    </h1>
+                    <p class="text-xl text-purple-100 mb-8 leading-relaxed font-normal">
+                        Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+                    </p>
+                </div>
+                <div class="col-span-5 flex justify-center items-center pointer-events-none">
+                    <img src="logo-animado.png" alt="Logo animado" class="w-[400px] opacity-100 animate-spin-slow object-contain">
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 relative z-10 mt-2">
+                <div class="grid grid-cols-4 gap-3 max-w-3xl text-sm font-semibold text-left">
+                    <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
+                        <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
+                    </a>
+                    <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                        <i data-lucide="calendar" class="w-5 h-5"></i> Actividades
+                    </button>
+                    <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                        <i data-lucide="heart-handshake" class="w-5 h-5"></i> Aportá a Ciclo
+                    </button>
+                    <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
+                        <i data-lucide="ribbon" class="w-5 h-5"></i> VIH
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VERSIÓN CELULAR -->
+        <div class="block md:hidden text-center">
+            <div class="max-w-6xl mx-auto px-4 relative z-10">
+                <span class="inline-block text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
                     Asociación Civil Ciclo Positivo
                 </span>
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase">
+                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3 leading-tight uppercase">
                     ACTIVISMO BASADO EN EVIDENCIA
                 </h1>
-                <p class="text-xl text-purple-100 mb-8 leading-relaxed font-normal">
+                <p class="text-sm text-purple-100 mb-4 leading-relaxed font-normal px-2">
                     Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
                 </p>
-            </div>
-
-            <!-- Columna Derecha: Logo 100% Opaco y Grande -->
-            <div class="col-span-5 flex justify-center items-center pointer-events-none">
-                <img src="logo-animado.png" alt="Logo animado" class="w-[400px] opacity-100 animate-spin-slow object-contain">
-            </div>
-        </div>
-
-        <!-- Botones de Acceso Rápido -->
-        <div class="max-w-6xl mx-auto px-4 relative z-10 mt-2">
-            <div class="grid grid-cols-4 gap-3 max-w-3xl text-sm font-semibold text-left">
-                <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
-                    <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
-                </a>
-                <button type="button" onclick="mostrarSeccion('actividades')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="calendar" class="w-5 h-5"></i> Actividades
-                </button>
-                <button type="button" onclick="mostrarSeccion('aportar')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="heart-handshake" class="w-5 h-5"></i> Aportá a Ciclo
-                </button>
-                <button type="button" onclick="mostrarInformacion('vih')" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2 border-none cursor-pointer font-semibold text-sm" style="background-color: #41b8bf;">
-                    <i data-lucide="ribbon" class="w-5 h-5"></i> VIH
-                </button>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ========================================== -->
-    <!-- VERSIÓN CELULAR (TÍTULO GRANDE Y EQUILIBRADO) -->
-    <!-- ========================================== -->
-    <div class="block md:hidden text-center">
-        <!-- Contenido principal -->
-        <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <span class="inline-block text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
-                Asociación Civil Ciclo Positivo
-            </span>
-            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3 leading-tight uppercase">
-                ACTIVISMO BASADO EN EVIDENCIA
-            </h1>
-            <p class="text-sm text-purple-100 mb-4 leading-relaxed font-normal px-2">
-                Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-            </p>
-            
-            <!-- Botones de Acceso Rápido -->
-            <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold mb-4">
-                <a href="#quienes-somos" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1" style="background-color: #41b8bf;">
-                    <i data-lucide="users" class="w-4 h-4"></i> Quiénes somos
-                </a>
-                <button type="button" onclick="mostrarSeccion('actividades')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
-                    <i data-lucide="calendar" class="w-4 h-4"></i> Actividades
-                </button>
-                <button type="button" onclick="mostrarSeccion('aportar')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
-                    <i data-lucide="heart-handshake" class="w-4 h-4"></i> Aportá a Ciclo
-                </button>
-                <button type="button" onclick="mostrarInformacion('vih')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
-                    <i data-lucide="ribbon" class="w-4 h-4"></i> VIH
-                </button>
-            </div>
-
-            <!-- Logo girando compacto -->
-            <div class="flex justify-center items-center py-1 pointer-events-none">
-                <img src="logo-animado.png" alt="Logo animado" class="w-[110px] opacity-100 animate-spin-slow object-contain">
-            </div>
-        </div>
-    </div>
-</section>
-            <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
-            <div class="max-w-6xl mx-auto text-left mt-8">
-                <div class="flex items-center justify-between mb-4 px-2">
-                    <h3 class="text-lg md:text-xl font-bold tracking-tight uppercase flex items-center gap-2 text-white">
-                        <span class="w-3 h-3 rounded-full animate-pulse inline-block" style="background-color: #e30381;"></span> 
-                        ¿En qué anda Ciclo?
-                    </h3>
-                    <div class="flex items-center gap-2">
-                        <button id="prev-btn" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white p-2 rounded-full transition-colors focus:outline-none shadow-md">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button id="next-btn" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white p-2 rounded-full transition-colors focus:outline-none shadow-md">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
+                
+                <div class="grid grid-cols-2 gap-2.5 max-w-xs mx-auto text-xs font-semibold mb-4">
+                    <a href="#quienes-somos" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1" style="background-color: #41b8bf;">
+                        <i data-lucide="users" class="w-4 h-4"></i> Quiénes somos
+                    </a>
+                    <button type="button" onclick="mostrarSeccion('actividades')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
+                        <i data-lucide="calendar" class="w-4 h-4"></i> Actividades
+                    </button>
+                    <button type="button" onclick="mostrarSeccion('aportar')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
+                        <i data-lucide="heart-handshake" class="w-4 h-4"></i> Aportá a Ciclo
+                    </button>
+                    <button type="button" onclick="mostrarInformacion('vih')" class="p-2.5 rounded-xl transition-all shadow-md text-slate-900 flex flex-col items-center justify-center gap-1 border-none cursor-pointer font-semibold text-xs" style="background-color: #41b8bf;">
+                        <i data-lucide="ribbon" class="w-4 h-4"></i> VIH
+                    </button>
                 </div>
 
-                <div id="carrusel-ciclo" class="grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(50%-8px)] md:auto-cols-[calc(33.333%-11px)] gap-4 overflow-x-auto no-scrollbar pb-4 pt-1 px-1 snap-x">
-                    
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
-                        <div>
-                            <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
-                                <img src="adhesion.png" alt="Adhesión a la Ley de VIH en PBA" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Incidencia Política</span>
-                                    <span class="text-[11px] text-purple-200 font-medium">📅 16/9/2026</span>
-                                </div>
-                                <h4 class="font-bold text-base mb-2 text-white">Adhesión a la Ley de VIH en PBA</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
-                                    El proyecto <strong>E-439/24-25</strong>, que adhiere a la Ley Nacional 27.675, ya tiene media sanción del Senado.<br><br>
-                                    ➡️ <strong>Ahora falta Diputados.</strong> Está pendiente en comisiones de Salud, Presupuesto y Legislación General.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
-                            <span>🏛️ Provincia de Bs. As.</span>
-                            <a href="https://www.instagram.com/p/DdWqoczFO5-/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
-                        <div>
-                            <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
-                                <img src="folclorenoticias.png" alt="Clases de Folclore en CABA" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Cultura & Comunidad</span>
-                                    <span class="text-[11px] text-purple-200 font-medium">📅 4/9/2026</span>
-                                </div>
-                                <h4 class="font-bold text-base mb-2 text-white">¡Llega Folclore en Ciclo!</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
-                                    Abrimos las puertas de nuestra sede en CABA para encontrarnos también desde la danza y la cultura popular.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
-                            <span>💃 Sede CABA</span>
-                            <a href="https://www.instagram.com/p/Dc4E-orzNrt/" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
-                        <div>
-                            <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
-                                <img src="simposio.png" alt="Simposio Fundación Huésped" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Salud Mental</span>
-                                    <span class="text-[11px] text-purple-200 font-medium">📅 28/8/2026</span>
-                                </div>
-                                <h4 class="font-bold text-base mb-2 text-white">TEJIENDO BIENESTAR: Construyendo salud mental.</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
-                                    Invitados a compartir experiencias de Grupos de Encuentro y acompañamiento emocional.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
-                            <span>📍 Fundación Huésped</span>
-                            <a href="https://www.instagram.com/p/Dcl3Dr1Dhmb/?img_index=2" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
-                        <div>
-                            <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
-                                <img src="brasil.png" alt="Conferencia Internacional de VIH/Sida en Río de Janeiro" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Internacional</span>
-                                    <span class="text-[11px] text-purple-200 font-medium">📅 26/7/2026</span>
-                                </div>
-                                <h4 class="font-bold text-base mb-2 text-white">Conferencia Internacional - Río de Janeiro</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
-                                    Presentamos nuestro póster sobre los 10 años de I=I en Argentina en #AIDS2026.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
-                            <span>📍 Río de Janeiro, Brasil</span>
-                            <a href="https://www.instagram.com/p/DbZSX9hjc9D/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
-                        <div>
-                            <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
-                                <img src="salta.png" alt="Proyecto de Ley de VIH en Salta" class="w-full h-full object-cover">
-                            </div>
-                            <div class="p-5">
-                                <div class="flex items-center justify-between mb-2">
-                                    <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Incidencia Política</span>
-                                    <span class="text-[11px] text-purple-200 font-medium">📅 21/8/2026</span>
-                                </div>
-                                <h4 class="font-bold text-base mb-2 text-white">Presentación del Proyecto de Ley en Salta</h4>
-                                <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
-                                    Presentamos la iniciativa en la Legislatura de Salta junto al Foro Provincial por la Ley de VIH.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
-                            <span>📍 Legislatura de Salta</span>
-                            <a href="https://www.instagram.com/p/DcToXomjo2o/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
-                        </div>
-                    </div>
-
+                <div class="flex justify-center items-center py-1 pointer-events-none">
+                    <img src="logo-animado.png" alt="Logo animado" class="w-[110px] opacity-100 animate-spin-slow object-contain">
                 </div>
             </div>
-
         </div>
     </section>
 
-<!-- SECCIÓN QUIÉNES SOMOS (GRILLA 3x3 TÁCTIL) -->
+    <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
+    <div class="max-w-6xl mx-auto px-4 text-left mt-8">
+        <div class="flex items-center justify-between mb-4 px-2">
+            <h3 class="text-lg md:text-xl font-bold tracking-tight uppercase flex items-center gap-2 text-white">
+                <span class="w-3 h-3 rounded-full animate-pulse inline-block" style="background-color: #e30381;"></span> 
+                ¿En qué anda Ciclo?
+            </h3>
+            <div class="flex items-center gap-2">
+                <button id="prev-btn" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white p-2 rounded-full transition-colors focus:outline-none shadow-md">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+                <button id="next-btn" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white p-2 rounded-full transition-colors focus:outline-none shadow-md">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="carrusel-ciclo" class="grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(50%-8px)] md:auto-cols-[calc(33.333%-11px)] gap-4 overflow-x-auto no-scrollbar pb-4 pt-1 px-1 snap-x">
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
+                        <img src="adhesion.png" alt="Adhesión a la Ley de VIH en PBA" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Incidencia Política</span>
+                            <span class="text-[11px] text-purple-200 font-medium">📅 16/9/2026</span>
+                        </div>
+                        <h4 class="font-bold text-base mb-2 text-white">Adhesión a la Ley de VIH en PBA</h4>
+                        <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
+                            El proyecto <strong>E-439/24-25</strong>, que adhiere a la Ley Nacional 27.675, ya tiene media sanción del Senado.<br><br>
+                            ➡️ <strong>Ahora falta Diputados.</strong> Está pendiente en comisiones de Salud, Presupuesto y Legislación General.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
+                    <span>🏛️ Provincia de Bs. As.</span>
+                    <a href="https://www.instagram.com/p/DdWqoczFO5-/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
+                        <img src="folclorenoticias.png" alt="Clases de Folclore en CABA" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Cultura & Comunidad</span>
+                            <span class="text-[11px] text-purple-200 font-medium">📅 4/9/2026</span>
+                        </div>
+                        <h4 class="font-bold text-base mb-2 text-white">¡Llega Folclore en Ciclo!</h4>
+                        <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
+                            Abrimos las puertas de nuestra sede en CABA para encontrarnos también desde la danza y la cultura popular.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
+                    <span>💃 Sede CABA</span>
+                    <a href="https://www.instagram.com/p/Dc4E-orzNrt/" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
+                        <img src="simposio.png" alt="Simposio Fundación Huésped" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Salud Mental</span>
+                            <span class="text-[11px] text-purple-200 font-medium">📅 28/8/2026</span>
+                        </div>
+                        <h4 class="font-bold text-base mb-2 text-white">TEJIENDO BIENESTAR: Construyendo salud mental.</h4>
+                        <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
+                            Invitados a compartir experiencias de Grupos de Encuentro y acompañamiento emocional.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
+                    <span>📍 Fundación Huésped</span>
+                    <a href="https://www.instagram.com/p/Dcl3Dr1Dhmb/?img_index=2" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
+                        <img src="brasil.png" alt="Conferencia Internacional de VIH/Sida en Río de Janeiro" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Internacional</span>
+                            <span class="text-[11px] text-purple-200 font-medium">📅 26/7/2026</span>
+                        </div>
+                        <h4 class="font-bold text-base mb-2 text-white">Conferencia Internacional - Río de Janeiro</h4>
+                        <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
+                            Presentamos nuestro póster sobre los 10 años de I=I en Argentina en #AIDS2026.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
+                    <span>📍 Río de Janeiro, Brasil</span>
+                    <a href="https://www.instagram.com/p/DbZSX9hjc9D/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg snap-start flex flex-col justify-between overflow-hidden">
+                <div>
+                    <div class="h-44 overflow-hidden bg-purple-950 flex items-center justify-center">
+                        <img src="salta.png" alt="Proyecto de Ley de VIH en Salta" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider text-slate-900" style="background-color: #41b8bf;">Incidencia Política</span>
+                            <span class="text-[11px] text-purple-200 font-medium">📅 21/8/2026</span>
+                        </div>
+                        <h4 class="font-bold text-base mb-2 text-white">Presentación del Proyecto de Ley en Salta</h4>
+                        <p class="text-xs text-purple-100 leading-relaxed font-normal space-y-2">
+                            Presentamos la iniciativa en la Legislatura de Salta junto al Foro Provincial por la Ley de VIH.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px] text-purple-200">
+                    <span>📍 Legislatura de Salta</span>
+                    <a href="https://www.instagram.com/p/DcToXomjo2o/?img_index=1" target="_blank" class="hover:text-[#41b8bf] font-medium flex items-center gap-1">Ver más <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SECCIÓN QUIÉNES SOMOS -->
     <section id="quienes-somos" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="bg-white/10 backdrop-blur-md text-white p-8 md:p-12 rounded-3xl border border-white/20 shadow-xl flex flex-col items-center text-center">
             
@@ -425,211 +410,114 @@
                 </p>
             </div>
 
-        <!-- SECCIÓN DE CARTELES DE LUCHA -->
-<div class="w-full text-left mt-6 pt-8 border-t border-white/20">
-    <div class="text-center mb-10">
-        <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-2 inline-block text-slate-900" style="background-color: #41b8bf;">Nuestra Identidad</span>
-        <h3 class="text-xl md:text-2xl font-bold uppercase text-white">
-            Carteles que llevan nuestra voz a las calles
-        </h3>
-        <p class="text-xs md:text-sm text-purple-200 mt-1">Pasá el cursor o tocá cada cartel para conocer la consigna que nos mueve.</p>
-    </div>
+            <!-- SECCIÓN DE CARTELES DE LUCHA -->
+            <div class="w-full text-left mt-6 pt-8 border-t border-white/20">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-2 inline-block text-slate-900" style="background-color: #41b8bf;">Nuestra Identidad</span>
+                    <h3 class="text-xl md:text-2xl font-bold uppercase text-white">
+                        Carteles que llevan nuestra voz a las calles
+                    </h3>
+                    <p class="text-xs md:text-sm text-purple-200 mt-1">Pasá el cursor o tocá cada cartel para conocer la consigna que nos mueve.</p>
+                </div>
 
-    <!-- ========================================== -->
-    <!-- VERSIÓN COMPUTADORA (GRILLA 3x3 ORIGINAL)  -->
-    <!-- ========================================== -->
-    <div class="hidden md:grid grid-cols-3 gap-8 pt-4 px-2">
-        
-        <!-- 1: odio.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="odio.jpeg" alt="Más Orgullo y Unidad" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Comunidad</span>
-                <h4 class="font-bold text-sm mb-1">Más Orgullo y Unidad</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Frente a los discursos de odio y la violencia, respondemos construyendo comunidad y defendiendo nuestros derechos con orgullo.</p>
+                <!-- Grilla de 3x3 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 pt-4 px-2">
+                    
+                    <!-- 1: odio.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="odio.jpeg" alt="Más Orgullo y Unidad" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Comunidad</span>
+                            <h4 class="font-bold text-sm mb-1">Más Orgullo y Unidad</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Frente a los discursos de odio y la violencia, respondemos construyendo comunidad y defendiendo nuestros derechos con orgullo.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2: discursos.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="discursos.jpeg" alt="Basta de Estigma" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
+                            <h4 class="font-bold text-sm mb-1">Basta de Estigma</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Los discursos discriminatorios generan exclusión real y atentan contra la vida y la salud integral de las personas.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3: cura.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="cura.jpeg" alt="Exigimos la Cura" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Ciencia</span>
+                            <h4 class="font-bold text-sm mb-1">Exigimos la Cura ¡Ya!</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Reclamamos inversión estatal en investigación científica para alcanzar una cura definitiva y universal para el VIH.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4: indetectable.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="indetectable.jpeg" alt="Indetectable = Intransmisible" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Evidencia</span>
+                            <h4 class="font-bold text-sm mb-1">I = I</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Quienes viven con VIH y toman su tratamiento con carga viral indetectable no transmiten el virus por vía sexual.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5: trabajo.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="trabajo.jpeg" alt="Trabajo Sexual" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Inclusión</span>
+                            <h4 class="font-bold text-sm mb-1">Trabajo Sexual es Trabajo</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Acompañamos y defendemos los derechos laborales, el reconocimiento y la protección social.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6: ESI.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="ESI.jpeg" alt="La ESI Salva Vidas" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Educación</span>
+                            <h4 class="font-bold text-sm mb-1">La ESI Salva Vidas</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Herramienta fundamental para prevenir violencias, promover la salud y construir juventudes libres.</p>
+                        </div>
+                    </div>
+
+                    <!-- 7: mujeres.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="mujeres.jpeg" alt="Mujeres con VIH" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Protagonismo</span>
+                            <h4 class="font-bold text-sm mb-1">Mujeres con VIH</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Visibilizamos las vivencias, la autonomía y el liderazgo histórico de las mujeres en la resistencia.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8: maternidades.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="maternidades.jpeg" alt="Maternidades Libres" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
+                            <h4 class="font-bold text-sm mb-1">Maternidades Libres</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Derecho pleno a decidir sobre nuestros cuerpos, gestar y maternar con información y sin estigmas.</p>
+                        </div>
+                    </div>
+
+                    <!-- 9: sabes.jpeg -->
+                    <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
+                        <img src="sabes.jpeg" alt="Reducción de Daños" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
+                        <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
+                            <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Salud</span>
+                            <h4 class="font-bold text-sm mb-1">Reducción de Daños</h4>
+                            <p class="text-xs text-purple-100 leading-relaxed">Abordaje pragmático frente al consumo, priorizando el cuidado, la información y el acompañamiento.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- 2: discursos.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="discursos.jpeg" alt="Basta de Estigma" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                <h4 class="font-bold text-sm mb-1">Basta de Estigma</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Los discursos discriminatorios generan exclusión real y atentan contra la vida y la salud integral de las personas.</p>
-            </div>
-        </div>
-
-        <!-- 3: cura.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="cura.jpeg" alt="Exigimos la Cura" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Ciencia</span>
-                <h4 class="font-bold text-sm mb-1">Exigimos la Cura ¡Ya!</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Reclamamos inversión estatal en investigación científica para alcanzar una cura definitiva y universal para el VIH.</p>
-            </div>
-        </div>
-
-        <!-- 4: indetectable.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="indetectable.jpeg" alt="Indetectable = Intransmisible" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Evidencia</span>
-                <h4 class="font-bold text-sm mb-1">I = I</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Quienes viven con VIH y toman su tratamiento con carga viral indetectable no transmiten el virus por vía sexual.</p>
-            </div>
-        </div>
-
-        <!-- 5: trabajo.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="trabajo.jpeg" alt="Trabajo Sexual" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Inclusión</span>
-                <h4 class="font-bold text-sm mb-1">Trabajo Sexual es Trabajo</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Acompañamos y defendemos los derechos laborales, el reconocimiento y la protección social.</p>
-            </div>
-        </div>
-
-        <!-- 6: ESI.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="ESI.jpeg" alt="La ESI Salva Vidas" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Educación</span>
-                <h4 class="font-bold text-sm mb-1">La ESI Salva Vidas</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Herramienta fundamental para prevenir violencias, promover la salud y construir juventudes libres.</p>
-            </div>
-        </div>
-
-        <!-- 7: mujeres.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-1 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="mujeres.jpeg" alt="Mujeres con VIH" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Protagonismo</span>
-                <h4 class="font-bold text-sm mb-1">Mujeres con VIH</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Visibilizamos las vivencias, la autonomía y el liderazgo histórico de las mujeres en la resistencia.</p>
-            </div>
-        </div>
-
-        <!-- 8: maternidades.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="maternidades.jpeg" alt="Maternidades Libres" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                <h4 class="font-bold text-sm mb-1">Maternidades Libres</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Derecho pleno a decidir sobre nuestros cuerpos, gestar y maternar con información y sin estigmas.</p>
-            </div>
-        </div>
-
-        <!-- 9: sabes.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-300 w-full max-w-[320px] mx-auto rounded-xl">
-            <img src="sabes.jpeg" alt="Reducción de Daños" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-25">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Salud</span>
-                <h4 class="font-bold text-sm mb-1">Reducción de Daños</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Abordaje pragmático frente al consumo, priorizando el cuidado, la información y el acompañamiento.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ========================================== -->
-    <!-- VERSIÓN CELULAR (CARRUSEL HORIZONTAL)       -->
-    <!-- ========================================== -->
-    <div class="flex md:hidden overflow-x-auto gap-4 pt-2 pb-6 px-4 snap-x snap-mandatory" style="scrollbar-width: none; -ms-overflow-style: none;">
-        
-        <!-- 1: odio.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="odio.jpeg" alt="Más Orgullo y Unidad" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Comunidad</span>
-                <h4 class="font-bold text-sm mb-1">Más Orgullo y Unidad</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Frente a los discursos de odio y la violencia, respondemos construyendo comunidad y defendiendo nuestros derechos con orgullo.</p>
-            </div>
-        </div>
-
-        <!-- 2: discursos.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="discursos.jpeg" alt="Basta de Estigma" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                <h4 class="font-bold text-sm mb-1">Basta de Estigma</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Los discursos discriminatorios generan exclusión real y atentan contra la vida y la salud integral de las personas.</p>
-            </div>
-        </div>
-
-        <!-- 3: cura.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="cura.jpeg" alt="Exigimos la Cura" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Ciencia</span>
-                <h4 class="font-bold text-sm mb-1">Exigimos la Cura ¡Ya!</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Reclamamos inversión estatal en investigación científica para alcanzar una cura definitiva y universal para el VIH.</p>
-            </div>
-        </div>
-
-        <!-- 4: indetectable.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="indetectable.jpeg" alt="Indetectable = Intransmisible" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Evidencia</span>
-                <h4 class="font-bold text-sm mb-1">I = I</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Quienes viven con VIH y toman su tratamiento con carga viral indetectable no transmiten el virus por vía sexual.</p>
-            </div>
-        </div>
-
-        <!-- 5: trabajo.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="trabajo.jpeg" alt="Trabajo Sexual" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Inclusión</span>
-                <h4 class="font-bold text-sm mb-1">Trabajo Sexual es Trabajo</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Acompañamos y defendemos los derechos laborales, el reconocimiento y la protección social.</p>
-            </div>
-        </div>
-
-        <!-- 6: ESI.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="ESI.jpeg" alt="La ESI Salva Vidas" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Educación</span>
-                <h4 class="font-bold text-sm mb-1">La ESI Salva Vidas</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Herramienta fundamental para prevenir violencias, promover la salud y construir juventudes libres.</p>
-            </div>
-        </div>
-
-        <!-- 7: mujeres.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="mujeres.jpeg" alt="Mujeres con VIH" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Protagonismo</span>
-                <h4 class="font-bold text-sm mb-1">Mujeres con VIH</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Visibilizamos las vivencias, la autonomía y el liderazgo histórico de las mujeres en la resistencia.</p>
-            </div>
-        </div>
-
-        <!-- 8: maternidades.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="maternidades.jpeg" alt="Maternidades Libres" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Derechos</span>
-                <h4 class="font-bold text-sm mb-1">Maternidades Libres</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Derecho pleno a decidir sobre nuestros cuerpos, gestar y maternar con información y sin estigmas.</p>
-            </div>
-        </div>
-
-        <!-- 9: sabes.jpeg -->
-        <div class="cartel-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl flex-shrink-0 w-[270px] snap-center rounded-xl">
-            <img src="sabes.jpeg" alt="Reducción de Daños" class="w-full h-auto block">
-            <div class="cartel-info absolute inset-0 bg-[#2e1044]/95 p-4 flex flex-col justify-center text-white rounded-xl">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded w-max mb-2 text-slate-900" style="background-color: #41b8bf;">Salud</span>
-                <h4 class="font-bold text-sm mb-1">Reducción de Daños</h4>
-                <p class="text-xs text-purple-100 leading-relaxed">Abordaje pragmático frente al consumo, priorizando el cuidado, la información y el acompañamiento.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-    <!-- SECCIÓN: APORTÁ A CICLO (OCULTA POR DEFECTO) -->
+    <!-- SECCIÓN: APORTÁ A CICLO -->
     <section id="aportar" class="seccion-oculta hidden py-20 px-4 max-w-4xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
             <div class="text-center max-w-2xl mx-auto mb-8">
@@ -662,7 +550,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: ACTIVIDADES (OCULTA POR DEFECTO) -->
+    <!-- SECCIÓN: ACTIVIDADES -->
     <section id="actividades" class="seccion-oculta hidden py-20 px-4 max-w-4xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
             <div class="text-center max-w-2xl mx-auto mb-10">
@@ -671,10 +559,7 @@
                 <p class="text-xs md:text-sm text-slate-500 mt-1">Pasá el cursor o tocá cada volante para ver toda la información detallada.</p>
             </div>
 
-            <!-- Grilla de 2 columnas para formato vertical -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                
-                <!-- Actividad 1: Grupos de Encuentro (gruposencuentro.jpg) -->
                 <div class="actividad-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rounded-2xl border border-slate-200">
                     <img src="gruposencuentro.jpg" alt="Grupos de Encuentro" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-10">
                     <div class="actividad-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-2xl space-y-2 overflow-y-auto">
@@ -699,7 +584,6 @@
                     </div>
                 </div>
 
-                <!-- Actividad 2: Clases de Folclore (folclore2.jpg) -->
                 <div class="actividad-card relative group overflow-hidden bg-transparent cursor-pointer shadow-xl rounded-2xl border border-slate-200">
                     <img src="folclore2.jpg" alt="Clases de Folclore" class="w-full h-auto block transition-transform duration-500 group-hover:scale-105 group-hover:opacity-10">
                     <div class="actividad-info absolute inset-0 bg-[#2e1044]/95 p-5 flex flex-col justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 text-white rounded-2xl space-y-2 overflow-y-auto">
@@ -723,7 +607,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -735,7 +618,6 @@
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
 
-            <!-- Barra de botones permanente para cambiar entre temas de Información sin volver al menú -->
             <div class="flex flex-wrap gap-2 justify-center border-b border-slate-200 pb-5 mb-6 pt-2">
                 <button type="button" onclick="mostrarInformacion('vih')" id="btn-info-vih" class="info-nav-btn px-4 py-2 rounded-xl text-xs font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1.5 cursor-pointer">
                     <i data-lucide="ribbon" class="w-4 h-4 text-[#e30381]"></i> VIH
@@ -760,7 +642,6 @@
                     </h3>
                 </div>
 
-                <!-- Botones de Pestañas (Tabs) -->
                 <div class="flex flex-wrap gap-2 justify-center border-b border-slate-200 pb-4">
                     <button type="button" onclick="cambiarTab('que-es')" id="btn-que-es" class="tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition-all bg-[#2e1044] text-white shadow-sm flex items-center gap-1.5 cursor-pointer">
                         <i data-lucide="help-circle" class="w-3.5 h-3.5"></i> ¿Qué es?
@@ -785,7 +666,6 @@
                     </button>
                 </div>
 
-                <!-- Contenido de las Pestañas de VIH -->
                 <div class="bg-white p-6 rounded-2xl border border-purple-100 min-h-[220px] flex flex-col justify-center">
                     <div id="tab-que-es" class="tab-content space-y-3">
                         <h4 class="text-base font-bold uppercase flex items-center gap-2" style="color: #2e1044;">
@@ -898,9 +778,6 @@
                 <p class="text-slate-700 text-sm md:text-base leading-relaxed">
                     Las Infecciones de Transmisión Sexual (ITS) son infecciones que se transmiten principalmente a través de las relaciones sexuales sin protección. Muchas de ellas pueden no presentar síntomas durante mucho tiempo, por lo que el testeo periódico es fundamental.
                 </p>
-                <p class="text-slate-700 text-sm md:text-base leading-relaxed">
-                    El diagnóstico temprano permite acceder a tratamientos oportunos y eficaces, previniendo complicaciones y cuidando nuestra salud sexual de manera integral.
-                </p>
             </div>
 
             <!-- Panel Trans -->
@@ -910,9 +787,6 @@
                 </h3>
                 <p class="text-slate-700 text-sm md:text-base leading-relaxed">
                     Trabajamos activamente por la inclusión, el respeto y la garantía de derechos integrales para las personas travestis, transexuales y transgénero.
-                </p>
-                <p class="text-slate-700 text-sm md:text-base leading-relaxed">
-                    El acceso a la salud integral, el respeto al trato digno y la Ley de Identidad de Género son pilares fundamentales para construir una sociedad justa y libre de violencias. Brindamos asesoramiento, contención y redes comunitarias de apoyo.
                 </p>
             </div>
 
@@ -924,38 +798,21 @@
                 <p class="text-slate-700 text-sm md:text-base leading-relaxed">
                     La Educación Sexual Integral (ESI) articula aspectos biológicos, psicológicos, sociales, afectivos y éticos. Es una herramienta clave para la promoción de la salud, el ejercicio de derechos y la prevención de la violencia.
                 </p>
-                <p class="text-slate-700 text-sm md:text-base leading-relaxed">
-                    Promovemos la ESI como un derecho fundamental en todos los ámbitos de la sociedad, fomentando el respeto por la diversidad y la construcción de vínculos saludables y libres de prejuicios.
-                </p>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: FORMACIÓN (OCULTA POR DEFECTO) -->
+    <!-- SECCIÓN: FORMACIÓN -->
     <section id="curso-activismo" class="seccion-oculta hidden py-20 px-4 max-w-4xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
             <div class="text-center max-w-2xl mx-auto mb-8">
                 <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Formación</span>
                 <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase" style="color: #2e1044;">7ma Edición: Curso de activismo en salud</h2>
             </div>
-
             <div class="max-w-3xl mx-auto space-y-6">
                 <p class="text-slate-600 leading-relaxed font-normal text-sm md:text-base">
                     Un espacio de formación pensado para quienes en Argentina quieren defender el derecho a la salud, acompañar situaciones de vulneración de derechos y desarrollar herramientas para incidir en políticas públicas.
                 </p>
-
-                <div class="bg-purple-50 border border-purple-100 p-6 rounded-2xl text-slate-700 text-sm space-y-3 font-normal">
-                    <p class="font-bold text-slate-900 uppercase text-xs tracking-wider mb-2" style="color: #2e1044;">📚 Contenidos abordados durante los 6 encuentros:</p>
-                    <ul class="grid sm:grid-cols-2 gap-2 text-xs md:text-sm font-medium">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Salud integral y activismo</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Prevención combinada y VIH</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Derecho a la salud y nueva Ley de VIH</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Atención de casos y vulneración de derechos</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Comunicación para la incidencia</li>
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-[#e30381] shrink-0"></i> Inteligencia artificial aplicada al activismo</li>
-                    </ul>
-                </div>
-
                 <div class="text-center pt-2">
                     <button type="button" disabled class="inline-flex items-center gap-2 bg-slate-300 text-slate-600 font-semibold px-6 py-3.5 rounded-xl cursor-not-allowed shadow-xs">
                         <i data-lucide="lock" class="w-4 h-4"></i> Inscripciones cerradas
@@ -965,14 +822,13 @@
         </div>
     </section>
 
-    <!-- GALERÍA (OCULTA POR DEFECTO) -->
+    <!-- GALERÍA -->
     <section id="galeria" class="seccion-oculta hidden py-20 px-4 max-w-5xl mx-auto">
         <div class="bg-white text-slate-800 p-8 md:p-12 rounded-3xl border border-slate-100 shadow-xl">
             <div class="text-center max-w-2xl mx-auto mb-8">
                 <span class="text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-md mb-3 inline-block text-slate-900" style="background-color: #41b8bf;">Galería</span>
                 <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase" style="color: #2e1044;">Comunidad en movimiento</h2>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                 <div class="bg-slate-50 p-3 rounded-2xl border border-slate-200 shadow-xs">
                     <img src="equipo.jpg" alt="Encuentro Ciclo Positivo" class="w-full h-64 object-cover rounded-xl">
@@ -985,9 +841,53 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center text-xs text-slate-500 mt-6 font-normal">Podés ver más imágenes y contenido diario en nuestro perfil de Instagram.</p>
         </div>
     </section>
+
+    <!-- FOOTER CON EL COLOR ROSA/VIOLETA ORIGINAL -->
+    <footer class="bg-[#4a0e4e] text-slate-200 border-t border-white/10 py-16 px-6 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
+            <div class="space-y-4">
+                <h3 class="text-xl font-bold text-white">Asociación Ciclo Positivo</h3>
+                <p class="text-sm text-slate-200 leading-relaxed">
+                    Trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="bg-white/10 border border-white/20 text-white px-3.5 py-1.5 rounded-full text-xs">Salud Colectiva</span>
+                    <span class="bg-white/10 border border-white/20 text-white px-3.5 py-1.5 rounded-full text-xs">ESI & Derechos</span>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Navegación</h4>
+                <ul class="space-y-2.5 text-sm text-slate-200">
+                    <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')" class="hover:text-[#41b8bf] transition-colors">Quiénes Somos</a></li>
+                    <li><a href="#acciones" onclick="mostrarSeccion('acciones')" class="hover:text-[#41b8bf] transition-colors">Nuestras Acciones</a></li>
+                    <li><a href="#informacion" onclick="mostrarInformacion('vih')" class="hover:text-[#41b8bf] transition-colors">Todo sobre VIH</a></li>
+                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')" class="hover:text-[#41b8bf] transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Contacto</h4>
+                <a href="https://instagram.com/ciclo.positivo" target="_blank" class="flex items-center gap-3 bg-white/10 border border-white/15 p-4 rounded-xl hover:bg-white/20 transition-colors">
+                    <i data-lucide="instagram" class="w-5 h-5 text-pink-300"></i>
+                    <div>
+                        <span class="block text-[10px] text-slate-300 font-semibold tracking-wide">SEGUINOS EN INSTAGRAM</span>
+                        <span class="text-sm font-medium text-white">@ciclo.positivo</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-300 gap-4">
+            <p>&copy; 2026 Asociación Ciclo Positivo. Todos los derechos reservados.</p>
+            <p>Construyendo redes y cuidados colectivos</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="bg-white/10 border border-white/20 text-white w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer" aria-label="Volver arriba">
+                <i data-lucide="arrow-up" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script>
@@ -1036,7 +936,6 @@
             }, 3500);
         });
 
-        // Activar carteles y actividades al tocar en celulares (soporte táctil)
         const interactivos = document.querySelectorAll('.cartel-card, .actividad-card');
         interactivos.forEach(card => {
             card.addEventListener('click', (e) => {
@@ -1117,59 +1016,9 @@
             mobileMenu.classList.add('hidden');
         }
 
-function cerrarInformacion() {
+        function cerrarInformacion() {
             document.getElementById('informacion').classList.add('hidden');
         }
     </script>
-
-<!-- FOOTER CON EL COLOR ROSA/VIOLETA ORIGINAL -->
-    <footer class="bg-[#4a0e4e] text-slate-200 border-t border-white/10 py-16 px-6 mt-20">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
-            
-            <!-- Columna 1 -->
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold text-white">Asociación Ciclo Positivo</h3>
-                <p class="text-sm text-slate-200 leading-relaxed">
-                    Trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="bg-white/10 border border-white/20 text-white px-3.5 py-1.5 rounded-full text-xs">Salud Colectiva</span>
-                    <span class="bg-white/10 border border-white/20 text-white px-3.5 py-1.5 rounded-full text-xs">ESI & Derechos</span>
-                </div>
-            </div>
-
-            <!-- Columna 2 -->
-            <div class="space-y-4">
-                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Navegación</h4>
-                <ul class="space-y-2.5 text-sm text-slate-200">
-                    <li><a href="#quienes-somos" onclick="mostrarSeccion('quienes-somos')" class="hover:text-[#41b8bf] transition-colors">Quiénes Somos</a></li>
-                    <li><a href="#acciones" onclick="mostrarSeccion('acciones')" class="hover:text-[#41b8bf] transition-colors">Nuestras Acciones</a></li>
-                    <li><a href="#informacion" onclick="mostrarInformacion('vih')" class="hover:text-[#41b8bf] transition-colors">Todo sobre VIH</a></li>
-                    <li><a href="#contacto" onclick="mostrarSeccion('contacto')" class="hover:text-[#41b8bf] transition-colors">Contacto</a></li>
-                </ul>
-            </div>
-
-            <!-- Columna 3 -->
-            <div class="space-y-4">
-                <h4 class="text-sm font-bold text-white tracking-wider uppercase">Contacto</h4>
-                <a href="https://instagram.com/ciclo.positivo" target="_blank" class="flex items-center gap-3 bg-white/10 border border-white/15 p-4 rounded-xl hover:bg-white/20 transition-colors">
-                    <i data-lucide="instagram" class="w-5 h-5 text-pink-300"></i>
-                    <div>
-                        <span class="block text-[10px] text-slate-300 font-semibold tracking-wide">SEGUINOS EN INSTAGRAM</span>
-                        <span class="text-sm font-medium text-white">@ciclo.positivo</span>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
-        <!-- Barra inferior -->
-        <div class="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-300 gap-4">
-            <p>&copy; 2026 Asociación Ciclo Positivo. Todos los derechos reservados.</p>
-            <p>Construyendo redes y cuidados colectivos</p>
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="bg-white/10 border border-white/20 text-white w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer" aria-label="Volver arriba">
-                <i data-lucide="arrow-up" class="w-4 h-4"></i>
-            </button>
-        </div>
-    </footer>
-
+</body>
+</html>
