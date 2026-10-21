@@ -54,6 +54,18 @@
             opacity: 0.25 !important;
             transform: scale(1.03);
         }
+        /* Animación de giro infinito para el logo de fondo */
+        @keyframes spinSlow {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 20s linear infinite;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -168,6 +180,16 @@
 
     <!-- HERO SECTION -->
     <section class="relative py-14 md:py-24 text-white overflow-hidden text-center">
+    
+    <!-- Video animado de fondo con transparencia -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+        <video autoplay loop muted playsinline class="w-[320px] md:w-[480px] opacity-10 animate-spin-slow object-contain">
+            <source src="logo-animado.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Tu contenido existente sigue acá abajo -->
+    <div class="max-w-6xl mx-auto px-4 relative z-10">
         <div class="max-w-6xl mx-auto px-4 relative z-10">
             <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
                 Asociación Civil Ciclo Positivo
