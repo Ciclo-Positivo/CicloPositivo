@@ -1096,4 +1096,18 @@
         }
     </script>
 </body>
+            // Auto-scroll para el carrusel de carteles en celular
+        const carruselCarteles = document.getElementById('carrusel-carteles');
+        if (carruselCarteles) {
+            setInterval(() => {
+                if (window.innerWidth < 768) {
+                    const maxScroll = carruselCarteles.scrollWidth - carruselCarteles.clientWidth;
+                    if (carruselCarteles.scrollLeft >= maxScroll - 10) {
+                        carruselCarteles.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carruselCarteles.scrollBy({ left: carruselCarteles.clientWidth * 0.85, behavior: 'smooth' });
+                    }
+                }
+            }, 3500); // Cambia de cartel cada 3.5 segundos
+        }
 </html>
