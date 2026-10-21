@@ -180,25 +180,31 @@
 <!-- HERO SECTION -->
 <section class="relative py-14 md:py-24 text-white overflow-hidden text-center md:text-left">
     
-    <!-- Logo lateral grande y con presencia -->
-    <div class="absolute inset-0 flex items-center justify-end pr-4 md:pr-12 pointer-events-none z-0 overflow-hidden">
-        <img src="logo-animado.png" alt="Logo animado" class="w-[280px] md:w-[420px] opacity-20 animate-spin-slow object-contain">
+    <!-- Grilla de dos columnas para que el contenido y el logo convivan centrados en el mismo bloque -->
+    <div class="max-w-6xl mx-auto px-4 relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        
+        <!-- Columna Izquierda: Textos (Ocupa 7 espacios) -->
+        <div class="md:col-span-7">
+            <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
+                Asociación Civil Ciclo Positivo
+            </span>
+            <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase">
+                ACTIVISMO BASADO EN EVIDENCIA
+            </h1>
+            <p class="text-sm md:text-xl text-purple-100 mb-8 leading-relaxed font-normal">
+                Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
+            </p>
+        </div>
+
+        <!-- Columna Derecha: Logo Grande y Centrado en el bloque (Ocupa 5 espacios) -->
+        <div class="md:col-span-5 flex justify-center items-center pointer-events-none">
+            <img src="logo-animado.png" alt="Logo animado" class="w-[260px] sm:w-[320px] md:w-[400px] opacity-20 animate-spin-slow object-contain">
+        </div>
     </div>
 
-    <!-- Contenido principal -->
-    <div class="max-w-6xl mx-auto px-4 relative z-10">
-        <span class="inline-block text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 text-slate-900 shadow-sm" style="background-color: #41b8bf;">
-            Asociación Civil Ciclo Positivo
-        </span>
-        <h1 class="text-2xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-5 leading-tight uppercase max-w-4xl">
-            ACTIVISMO BASADO EN EVIDENCIA
-        </h1>
-        <p class="text-sm md:text-xl text-purple-100 mb-8 max-w-3xl md:max-w-2xl md:mx-0 leading-relaxed font-normal">
-            Somos un colectivo de activistas, profesionales y referentes que trabajamos por el acompañamiento integral a poblaciones diversas y en situación de vulnerabilidad.
-        </p>
-        
-        <!-- Botones de Acceso Rápido -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl md:mx-0 text-sm font-semibold mb-12">
+    <!-- Botones de Acceso Rápido (Abajo, alineados con el bloque izquierdo) -->
+    <div class="max-w-6xl mx-auto px-4 relative z-10 mt-2">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl text-sm font-semibold">
             <a href="#quienes-somos" class="p-3.5 rounded-2xl transition-all shadow-md text-slate-900 hover:scale-105 flex flex-col items-center justify-center gap-2" style="background-color: #41b8bf;">
                 <i data-lucide="users" class="w-5 h-5"></i> Quiénes somos
             </a>
@@ -212,6 +218,8 @@
                 <i data-lucide="ribbon" class="w-5 h-5"></i> VIH
             </button>
         </div>
+    </div>
+</section>
             <!-- CARRUSEL "EN QUÉ ANDA CICLO" -->
             <div class="max-w-6xl mx-auto text-left mt-8">
                 <div class="flex items-center justify-between mb-4 px-2">
